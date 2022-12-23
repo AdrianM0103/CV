@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="titlu"><h1>GoldenGate</h1></div>
+        <div class="else">
+            <button class="butt" style="border-right: 2px solid gray" id="afiscos">Cosul meu</button>
+        </div>
+    </div>
+    <div id="cos" style="visibility: hidden;">
+        <div id="coselem"></div>
+        <div class="totaldiv">
+        <p id="total"> Nu este niciun produs in cos </p>
+        <div class="plas">
+            <button id="plaseaza" onclick = "plaseazaComanda()" disabled="true">Plaseaza comanda</button>
+        </div>
+    </div>
+    </div>
+    <div class="container">
+        <div id="prezentaree">
+            <p class="tprezentare"> Aceasta este pagina oficiala a GoldenGate. </p>
+            <p class="tprezentare"> Atelier de bijuterii din aur. </p>
+        </div>
+        <div class="produse">
+        <div class="product">
+            <img src="./images/cercei_aur.jpg" class="poza_produs" id="pcercei">
+            <p class="descriere">Cercei din aur, 14K</p>
+            <div class="button_produs">
+                <button class="butt_cos" id="bcercei">Adauga in cos</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./images/inel_aur.jpg" class="poza_produs" id="pinel">
+            <p class="descriere">Inel din aur, 14K</p>
+            <div class="button_produs">
+                <button class="butt_cos" id="binel">Adauga in cos</button>
+            </div>
+        </div>
+        <div class="product">
+            <img src="./images/bratara_aur.jpg" class="poza_produs" id="pbratara">
+            <p class="descriere">Bratara din aur, 14K</p>
+            <div class="button_produs">
+                <button class="butt_cos" id="bbratara">Adauga in cos</button>
+            </div>
+        </div>
+        </div>
+    </div>
+    <script
+  src="js/jquery.js""></script>
+  <script src="js/cos.js"></script>
+</body>
+</html>
+
+<!-- cdn - content delivery netweork 
+    w3schools.com/jquery--!>

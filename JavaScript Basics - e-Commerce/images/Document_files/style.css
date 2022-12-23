@@ -1,0 +1,103 @@
+.navbar {
+  width: 100%;
+  top: 0;
+  left: 0;
+  height: 100px;
+  border-bottom: 10px solid rgb(188, 188, 82);
+  background-color: gold;
+  position: absolute;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  z-index: 3;
+}
+
+.title {
+  float: left;
+  align-self: center;
+  display: flex;
+}
+
+h1 {
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.else {
+  float: right;
+  align-items: right;
+  display: flex;
+  padding-right: 30px;
+}
+
+.butt {
+  width: 100px;
+  height: 30px;
+  background: transparent;
+  border-top: transparent;
+  border-bottom: transparent;
+  border-color: gray;
+  font-size: 16px;
+  color: black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  border-radius: 5px;
+}
+
+.butt:hover {
+  background-color: white;
+  opacity: 20%;
+}
+
+.container {
+  background-color: rgb(234, 234, 172);
+  border-bottom: 10px solid rgb(188, 188, 82);
+  border-left: 10px solid rgb(188, 188, 82);
+  border-right: 10px solid rgb(188, 188, 82);
+  top: 90px;
+  left: 15%;
+  z-index: 1;
+  position: relative;
+  width: 70%;
+  height: 100%;
+}
+
+.tprezentare {
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: black;
+  font-size: 20px;
+}
+
+#prezentaree {
+  padding-top: 20px;
+  flex: auto;
+  align-self: center;
+  position: relative;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 30px;
+  margin-right: 30px;
+  border-bottom: 10px solid rgb(188, 188, 82);
+}
+
+.product {
+  width: 300px;
+  display: block;
+  height: 400px;
+  border-radius: 10px;
+  border: 10px solid white;
+  margin: 30px;
+  background-color: white;
+}
+
+.produse {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.poza_produs {
+  align-self: center;
+  width: 250px;
+  height: 250px;
+}
