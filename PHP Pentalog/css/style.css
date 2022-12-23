@@ -1,0 +1,22 @@
+body {
+  background-image: url("../images/background2.png");
+}
+
+.colnav {
+  font-family: Arial, Helvetica, sans-serif;
+  color: gray;
+  font-size: 2vmin;
+  min-width: 100px;
+  align-self: center;
+}
+
+.navbut:hover {
+  transition: ease-in 0.2s;
+  background-color: rgba(128, 128, 128, 0.3);
+  border-left: 1px solid gray;
+  border-right: 1px solid gray;
+}
+.row-nav {
+  z-index: 4;
+  background-color: rgb(250 255 185 / 90%);
+}

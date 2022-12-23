@@ -1,0 +1,131 @@
+
+
+create table carti(
+id_carte numeric(4) primary key,
+titlu varchar(40) not null,
+nr_pagini numeric(4) not null,
+rezumat varchar(256) not null,
+poza varchar(256) not null,
+poza_suf varchar(5) not null
+);
+
+create table utilizatori(
+id_utilizator int(4) primary key auto_increment,
+username varchar(40) not null,
+password varchar(255) not null,
+email varchar(100) not null,
+nume varchar(40) not null,
+prenume varchar(40) not null
+);
+
+create table utilizatori_carti(
+id_carte numeric(4),
+id_utilizator int(4),
+review boolean,
+constraint fk_carte
+	foreign key (id_carte)
+	references carti(id_carte),
+constraint fk_utilizatori
+	foreign key (id_utilizator)
+	references utilizatori(id_utilizator)
+);
+
+create table autori(
+id_autor numeric(4) primary key,
+nume_autor varchar(100) not null,
+alter_name varchar(100) not null,
+data_nasterii date not null
+);
+
+create table carti_autori(
+id_carte numeric(4),
+id_autor numeric(4),
+constraint fk_carte1
+	foreign key (id_carte)
+	references carti(id_carte),
+constraint fk_autori
+	foreign key (id_autor)
+	references autori(id_autor)
+);
+
+create table genuri(
+id_gen numeric(4) primary key,
+denumire_gen varchar(40) not null
+);
+
+create table carti_genuri(
+id_carte numeric(4),
+id_gen numeric(4),
+constraint fk_carte2
+	foreign key (id_carte)
+	references carti(id_carte),
+constraint fk_genuri
+	foreign key (id_gen)
+	references genuri(id_gen)
+);
+
+
+
+alter table carti
+add anul_aparitiei numeric(4) not null;
+
+alter table carti
+modify column rezumat varchar(1000);
+
+
+alter table utilizatori
+add poza_user varchar(1000);
+
+alter table utilizatori
+add poza_user_suf varchar(5);
+
+alter table utilizatori
+modify column password varchar(255);
+------------------------------------------------------------------------------------------------
+--insert-uri in carti, autori si genuri
+
+
+insert into carti(id_carte,titlu,nr_pagini,rezumat,poza,poza_suf,anul_aparitiei) values (1,"Furia Rosie", 456,"În viitor, populaţia lumii e împărţită în clase având funcţii strict și clar definite, iar fiecărei clase îi corespunde câte o culoare. Darrow e un Roşu şi un Sondor al Iadului care lucrează în adâncul minelor de pe Marte pentru a face suprafaţa planetei locuibilă. La fel ca toţi cei din neamul lui, trudeşte din greu pentru a oferi un viitor mai bun generaţiilor următoare. Darrow va descoperi însă destul de repede că umanitatea ajunsese demult să populeze planeta Marte, iar cei ca el sunt ţinuţi drept sclavi de o clasă conducătoare decadentă, cea Aurie. Singurul mod în care se poate face dreptate în această societate abuzivă este ca Darrow să se infiltreze în mijlocul Auriilor, devenind unul dintre ei.","../images/carti/coperta-furia-rosie-pierce-brown",".jpg",2014);
+insert into carti(id_carte,titlu,nr_pagini,rezumat,poza,poza_suf,anul_aparitiei) values (2,"Furia Aurie", 670,"Darrow e nevoit să lupte în apărarea bărbatului care i-a spânzurat soţia, să fie cel mai bun dintre lăncierii lui. Pe fondul unui adevărat război civil declanşat în sânul Auriilor, într-un fundal desprins din Războiul stelelor, eroul nu trebuie să piardă niciun moment din vedere adevăratul lui scop: revoluţionarea Societăţii care înrobeşte Culorile considerate inferioare. În rândul duşmanilor săi, Darrow reuşeşte să găsească prietenie, respect, ba chiar şi dragoste. Însă cine ar mai rămâne alături de el dacă adevărata lui identitate ar ieşi la iveală?","../images/carti/1072825",".jpg",2015);
+insert into carti(id_carte,titlu,nr_pagini,rezumat,poza,poza_suf,anul_aparitiei) values (3,"Furia Diminetii", 764, "Abandonat de Mustang, luat drept mort de Fiii lui Ares, adus în pragul nebuniei de singurătatea și întunecimea de mormânt a carcerei în care este ținut închis, Secerătorul e redus la acel Darrow din Lykos care era la începuturi. Totul pare pierdut. Dar cu ajutorul prietenilor pe care încă-i mai are, Darrow reușește să evadeze din mâinile Șacalului, ceea ce se dovedește cea mai ușoară parte a misiunii lui. Cea mai complicată este să-i inspire pe cei asupriți să găsească curajul să se revolte, puterea să rupă lanțurile, îndrăzneala să viseze la o lume complet diferită față de tot ce știau până acum. Căci a venit în sfârșit momentul revoluționării Societății abuzive.", "../images/carti/2328567-0-240",".jpeg",2016);
+
+insert into carti(id_carte,titlu,nr_pagini,rezumat,poza,poza_suf,anul_aparitiei) values (4,"Immune", 300, "You wake up and feel a tickle in your throat. Your head hurts. You're mildly annoyed as you get the kids ready for school and dress for work yourself. Meanwhile, an utterly epic war is being fought, just below your skin. Millions are fighting and dying for you to be able to complain as you drink your cup of tea and head out the door. So what, exactly, IS your immune system?", "../images/carti/35480187o",".jpg",2021);
+insert into carti(id_carte,titlu,nr_pagini,rezumat,poza,poza_suf,anul_aparitiei) values (5,"Amintiri din copilarie", 210, "Cea mai mare dintre cele două lucrări ale sale aparținând genului memorialistic, ea conține unele dintre cele mai caracteristice exemple de narațiune la persoana întâi din literatura română, fiind considerată de critici capodopera lui Creangă. Structurată în capitole separate scrise de-a lungul mai multor ani (între 1881 și 1888), părți din ea au fost citite în fața cenaclului literar Junimea din Iași. Trei dintre cele patru secțiuni au fost publicate în timpul vieții lui Creangă de revista Convorbiri Literare, ultima parte rămânând neterminată după moartea scriitorului.","../images/carti/370716",".jpg",1870);
+insert into carti(id_carte,titlu,nr_pagini,rezumat,poza,poza_suf,anul_aparitiei) values (6,"Data Modeling Made Simple", 400, "Data Modeling Made Simple will provide you with a practical working knowledge of data modeling concepts and best practices. Master these ten objectives:Know when a data model is needed and which type of data model is most effective for each situation.Read a data model of any size and complexity with the same confidence as reading a book.Build a fully normalized relational data model, as well as an easily navigatable dimensional model.Apply techniques to turn a logical data model into an efficient physical design.Leverage several templates to make requirements gathering more efficient and accurate.Explain all ten categories of the Data Model Scorecard(r).Learn strategies to improve your working relationships with others.Appreciate the impact unstructured data has on our data modeling deliverables.Learn basic UML concepts.Put data modeling in context with XML, metadata, and agile development","../images/carti/417u6oRUPTL._SX404_BO1,204,203,200_",".jpg",2010);
+
+insert into genuri values (1,"Science Fiction");
+insert into genuri values (2,"Actiune");
+insert into genuri values (3,"Aventura");
+
+insert into genuri values (4,"Biologie");
+insert into genuri values (5,"Copilarie");
+insert into genuri values (6,"Baze de Date");
+
+insert into carti_genuri values(1,1);
+insert into carti_genuri values(1,2);
+insert into carti_genuri values(1,3);
+insert into carti_genuri values(2,1);
+insert into carti_genuri values(2,2);
+insert into carti_genuri values(2,3);
+insert into carti_genuri values(3,1);
+insert into carti_genuri values(3,2);
+insert into carti_genuri values(3,3);
+
+insert into carti_genuri values(4,4);
+insert into carti_genuri values(5,3);
+insert into carti_genuri values(5,5);
+insert into carti_genuri values(6,6);
+
+insert into autori values (1,"Pierce Brown","Pierce B.","03/04/1990");
+
+insert into autori values (2,"Philipp Dettmer","Philipp Dettmer","12/04/1996");
+insert into autori values (3,"Ion Creanga","Creanga I.","01/03/1834");
+insert into autori values (4,"Steve Hoberman","S.H.","15/06/1967");
+
+insert into carti_autori values (1,1);
+insert into carti_autori values (2,1);
+insert into carti_autori values (3,1);
+
+insert into carti_autori values (4,2);
+insert into carti_autori values (5,3);
+insert into carti_autori values (6,4);
