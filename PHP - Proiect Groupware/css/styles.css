@@ -1,0 +1,490 @@
+.navbar {
+  width: 100vw;
+  height: 50px;
+  border-bottom: 1px solid black;
+    opacity: 50%;
+  background-color: black;
+    top: 0;
+  left: 0;
+  position:fixed;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+}
+
+body {
+  background: url("../images/dfc2n5h-c0de2d75-cb7a-4146-8300-134225f0ed15.jpg") no-repeat center center fixed;
+  background-size: cover;
+  height: 100%;
+  overflow: hidden;
+}
+
+#project_selector {
+  width: 300px;
+  height: 40px;
+  font-size:24px;
+}
+
+.logo{
+    font-size:40px;
+    font-family:Helvetica;
+    color:white;
+    margin-right:20px;
+    position:relative;
+    margin-top:0;
+}
+
+#welcome {
+  font-size: 100px;
+  text-align: center;
+  font-family: Helvetica;
+  color:white;
+  opacity: 70%;
+  margin-top:180px;
+  margin-bottom:0px;
+}
+
+.navbarbut{
+    width:70px;
+    height:100%;
+    background-color:transparent;
+    color:white;
+    position:relative;
+}
+
+.buts{
+    margin-right:30px;
+}
+.navbarbut:hover{
+    border-left:1px solid white;
+    border-right:1px solid white;
+}
+.incipit{
+     margin-left:5px;
+  margin-top:5px;
+    display:flex;
+    flex-direction:row;
+}
+
+.login{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.register{
+    width:300px;
+    height:280px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+#username{
+    position:relative;
+    margin-top:0;
+  font-size: 50px;
+  text-align: center;
+  font-family: Helvetica;
+  color:white;
+  opacity: 90%;
+}
+#selecteaza{
+  font-size: 25px;
+  text-align: center;
+  font-family: Helvetica;
+  color:white;
+  opacity: 90%;
+  margin-top:100px;
+}
+
+.adaugaProiectForm{
+        width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.container-principal{
+    display:flex;
+    flex-direction:column;
+    width: 95%;
+    height: 95%;
+    margin-top: 80px;
+    margin-left: 30px;
+    overflow:auto;
+}
+
+.lista{
+    width:300px;
+    height:600px;
+    background-color:white;
+    opacity:90%;
+    margin-left:20px;
+    border-radius:10px;
+}
+
+.lista-text{
+    margin-left:10px;
+    font-size:24px;
+    color:black;
+    font-family:Helvetica;
+}
+
+.tools{
+    margin-left:20px;
+    display:flex;
+    flex-direction:row;
+}
+.lists{
+    overflow:auto;
+    margin-top:20px;
+    display:flex;
+    flex-direction:row;
+}
+.sarcini{
+    width: 280px;
+    background-color: darkgray;
+    border-radius: 20px;
+    height: 500px;
+    margin-left: 10px;
+    margin-right:10px;
+    overflow: auto;
+}
+
+.adaugaLista{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.stergeLista{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+#list_selector{
+    width:150px;
+}
+
+.adaugaSarcina{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+#list_selector_sarcina{
+    width:150px;
+}
+
+.sarcina{
+    width: 250px;
+    height: 50px;
+    background-color: white;
+    margin-left: 10px;
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+.sarcina-text{
+    text-align:center;
+    color:black;
+    padding-top:15px;
+    font-size:18px;
+    font-family:Helvetica;
+}
+
+.stergeSarcina{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.adaugaMembru{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+#selectare_user{
+    width:150px;
+}
+
+.stergeMembru{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+.stergeProiect{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+a:link {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a:active {
+  text-decoration: none;
+}
+
+.sarcina:hover{
+    opacity:50%;
+}
+
+.sarcina-container{
+    display:flex;
+    flex-direction:column;
+    border-radius:10px;
+    width:67%;
+    height:87%;
+    margin-top: 80px;
+    margin-left: 16%;
+    background-color:white;
+    opacity:90%;
+}
+
+.tools-sarcina {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    top: 10px;
+}
+
+.descriere{
+    position: relative;
+    width: 85%;
+    left:20px;
+}
+
+.titlu-sarcina{
+        font-size: 24px;
+    border-bottom: 1px solid black;
+    width: 94%;
+}
+
+.descriere-sarcina{
+    width: 94%;
+    overflow-wrap: break-word;
+    height: 100px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+}
+
+.rand{
+    display:flex;
+    flex-direction:row;
+}
+
+.column{
+    display:flex;
+    flex-direction:column;
+    width:85%;
+}
+
+.obiective{
+    margin-left: 20px;
+    height: 300px;
+    border-bottom: 1px solid black;
+    width: 95%;
+}
+
+.lista-obiective{
+    display: flex;
+    margin-top: 10px;
+    flex-direction: column;
+    overflow: auto;
+    height: 200px;
+}
+
+.adaugaObiectiv{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.stergeObiectiv{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.schimbaLista{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.schimbaDenumire{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.schimbaDescriere{
+    width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.comentariul{
+    display:flex;
+    flex-direction:row;
+}
+
+.comentarii{
+    margin-top:10px;
+}
+
+
+.listComentarii{
+    width:600px;
+    height:800px;
+    background-color:white;
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    border-radius:10px;
+    opacity:90%;
+    overflow:auto;
+}
+
+.comentariu{
+    width:97%;
+    border:1px solid black;
+    left:8px;
+    margin-top:10px;
+    position:relative;
+}
+
+.autor{
+    border-bottom:1px solid black;
+    font-size:10px;
+}
+
+.close-comments{
+    margin-right: 10px;
+    float: right;
+    margin-top: 10px;
+    position: relative;
+}
+
+.comentariile{
+    position:relative;
+    top:30px;
+    overflow:auto;
+}
+
+.adaugaAdminSecundar{
+        width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.stergeAdminSecundar{
+        width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
+
+.exportRaport{
+  width:300px;
+    height:200px;
+    background-color:white;
+    position: absolute;
+    top: 20%;
+    left: 41%;
+    border-radius:10px;
+    opacity:90%;
+}
